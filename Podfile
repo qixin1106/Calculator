@@ -6,6 +6,6 @@ platform :ios, '13.0'
 target 'Calculator' do
   use_frameworks!
 
-  pod 'DeviceKit', '~> 4.5'
+  pod 'DeviceKit', '~> 5.0'
 
 end

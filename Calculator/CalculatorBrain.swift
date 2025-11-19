@@ -24,16 +24,22 @@ struct CalculatorBrain {
     private enum Operation {
         case constant(Double)
         case unaryOperation((Double) -> Double)
-        case binaryOperation((Double, Double) -> Double)
+        case binaryOperation((Double, Double) -> Double, Int) // 第二个参数是优先级
         case result
     }
     
     private var operations: Dictionary<String, Operation> = [
-        "＋" : .binaryOperation({ $0 + $1 }),
-        "﹣" : .binaryOperation({ $0 - $1 }),
-         "×" : .binaryOperation({ $0 * $1 }),
-         "÷" : .binaryOperation({ $0 / $1 }),
+        "＋" : .binaryOperation({ $0 + $1 }, 1),
+        "﹣" : .binaryOperation({ $0 - $1 }, 1),
+         "×" : .binaryOperation({ $0 * $1 }, 2),
+         "÷" : .binaryOperation({ $0 / $1 }, 2),
+         "^" : .binaryOperation({ pow($0, $1) }, 3),
          "√" : .unaryOperation({ sqrt($0) }),
+         "sin" : .unaryOperation({ sin($0) }),
+         "cos" : .unaryOperation({ cos($0) }),
+         "tan" : .unaryOperation({ tan($0) }),
+         "log" : .unaryOperation({ log10($0) }),
+         "ln" : .unaryOperation({ log($0) }),
          "±" : .unaryOperation({ -$0 }),
          "﹪" : .unaryOperation({ $0 / 100 }),
          "AC": .constant(0),
@@ -45,6 +51,8 @@ struct CalculatorBrain {
     private struct PendingBinaryOperation {
         let function: (Double, Double) -> Double
         let firstOperand: Double
+        let precedence: Int
+        let operationString: String
         
         func perform(with secondOperand: Double) -> Double {
             return function(firstOperand, secondOperand)
@@ -73,17 +81,25 @@ struct CalculatorBrain {
                         description = symbol + "(" + value.setMaxLength(of: 5) + ")" + "="
                         accumulator = function(accumulator!)
                     }
-                case .binaryOperation(let function):
-                    performPendingBinaryOperation()
+                case .binaryOperation(let function, let precedence):
+                    // 处理优先级：如果当前运算符优先级低于或等于pending运算符，则先执行pending运算
+                    if pendingBinaryOperation != nil && accumulator != nil {
+                        let currentPrecedence = pendingBinaryOperation?.precedence ?? 0
+                        if precedence <= currentPrecedence {
+                            performPendingBinaryOperation()
+                        }
+                    }
                     
                     if accumulator != nil {
                         if description.last == "=" {
+                            // 上一次是结果，开始新的运算
                             description = String(describing: accumulator!).removeAfterPointIfZero().setMaxLength(of: 5) + symbol
                         } else {
+                            // 继续当前运算
                             description += symbol
                         }
                         
-                        pendingBinaryOperation = PendingBinaryOperation(function: function, firstOperand: accumulator!)
+                        pendingBinaryOperation = PendingBinaryOperation(function: function, firstOperand: accumulator!, precedence: precedence, operationString: symbol)
                         resultIsPending = true
                         accumulator = nil
                     }
