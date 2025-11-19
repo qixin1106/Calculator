@@ -1,0 +1,59 @@
+{
+  "" : {
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/Calculator-primary.dia",
+    "emit-module-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/Calculator-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/Calculator-primary-emit-module.dia",
+    "pch" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/Calculator-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/Calculator-primary.swiftdeps"
+  },
+  "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/Calculator/CalculatorBrain.swift" : {
+    "const-values" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.swiftconstvalues",
+    "dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.d",
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.dia",
+    "index-unit-output-path" : "/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.o",
+    "llvm-bc" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.bc",
+    "object" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.o",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain.swiftdeps",
+    "swiftmodule" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/CalculatorBrain~partial.swiftmodule"
+  },
+  "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/Calculator/Support Files/AppDelegate.swift" : {
+    "const-values" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/Calculator/Support Files/StringExtension.swift" : {
+    "const-values" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.swiftconstvalues",
+    "dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.d",
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.dia",
+    "index-unit-output-path" : "/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.o",
+    "llvm-bc" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.bc",
+    "object" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.o",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension.swiftdeps",
+    "swiftmodule" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/StringExtension~partial.swiftmodule"
+  },
+  "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/Calculator/ViewController.swift" : {
+    "const-values" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.dia",
+    "index-unit-output-path" : "/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController.swiftdeps",
+    "swiftmodule" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/ViewController~partial.swiftmodule"
+  },
+  "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/qixin/Documents/PersonalWork/TraeCN-Demo/iOS-Calculator/Calculator/build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}
