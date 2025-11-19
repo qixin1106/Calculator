@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		196DE5901F96AAAD000B3646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196DE58F1F96AAAD000B3646 /* Assets.xcassets */; };
 		196DE5931F96AAAD000B3646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 196DE5911F96AAAD000B3646 /* LaunchScreen.storyboard */; };
 		196DE59C1F96B06C000B3646 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196DE59B1F96B06C000B3646 /* CalculatorBrain.swift */; };
+		9922C3E02ECDAE0800664FB8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922C3DF2ECDAE0800664FB8 /* HistoryViewController.swift */; };
+		9922C3E12ECDAE0800664FB8 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922C3DE2ECDAE0800664FB8 /* HistoryItem.swift */; };
 		E217DB5F87E208AD6DD49BAF /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1167123928B3030E0410459 /* Pods_Calculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		196DE5941F96AAAD000B3646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		196DE59B1F96B06C000B3646 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		914ED9B4194B377FCAA3038F /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		9922C3DE2ECDAE0800664FB8 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		9922C3DF2ECDAE0800664FB8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		A1167123928B3030E0410459 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C0E50BEFAD5D24336FA03A /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,8 @@
 		196DE5871F96AAAD000B3646 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				9922C3DE2ECDAE0800664FB8 /* HistoryItem.swift */,
+				9922C3DF2ECDAE0800664FB8 /* HistoryViewController.swift */,
 				196DE59B1F96B06C000B3646 /* CalculatorBrain.swift */,
 				196DE58A1F96AAAD000B3646 /* ViewController.swift */,
 				196DE58C1F96AAAD000B3646 /* Main.storyboard */,
@@ -130,8 +136,9 @@
 		196DE57D1F96AAAD000B3646 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 2610;
 				ORGANIZATIONNAME = "Andrea Vultaggio";
 				TargetAttributes = {
 					196DE5841F96AAAD000B3646 = {
@@ -223,6 +230,8 @@
 				196DE59C1F96B06C000B3646 /* CalculatorBrain.swift in Sources */,
 				1909E7E01F9FCF4B004F4F17 /* StringExtension.swift in Sources */,
 				196DE58B1F96AAAD000B3646 /* ViewController.swift in Sources */,
+				9922C3E02ECDAE0800664FB8 /* HistoryViewController.swift in Sources */,
+				9922C3E12ECDAE0800664FB8 /* HistoryItem.swift in Sources */,
 				196DE5891F96AAAD000B3646 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +293,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JDKH36YQ54;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -300,10 +311,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -344,8 +356,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JDKH36YQ54;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -354,10 +368,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -368,9 +384,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GN42Y8BWCS;
 				INFOPLIST_FILE = "$(SRCROOT)/Calculator/Support Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrea.demoapp.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -384,9 +403,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GN42Y8BWCS;
 				INFOPLIST_FILE = "$(SRCROOT)/Calculator/Support Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrea.demoapp.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
